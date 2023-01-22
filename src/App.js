@@ -43,13 +43,13 @@ function App() {
             activePark.geometry.coordinates[1],
             activePark.geometry.coordinates[0]
           ]}
-          onClose={() => {
-            setActivePark(null);
-          }}
+          // onClose={() => {
+          //   setActivePark(null);
+          // }}
         >
           <div>
             <h2>{activePark.properties.NAME}</h2>
-            <p>{activePark.properties.DESCRIPTION}</p>
+            <p>{activePark.properties.DESCRIPTIO}</p>
           </div>
         </Popup>
       )}
