@@ -12,7 +12,7 @@ function App() {
   });
 
   return ( 
-    <MapContainer center={[49.2, -123.2]} zoom={12} scrollWheelZoom={false}>
+    <MapContainer center={[49.27556, -123.12006]} zoom={12} scrollWheelZoom={false}>
   <TileLayer
     url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
     attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
