@@ -2,12 +2,12 @@ import './App.css';
 import React, {useState}  from "react";
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { Icon } from "leaflet";
-import parkData from "./data/skateboard-parks.json";
+import parkData from "./data/data.json";
 
 function App() {
   const [activePark, setActivePark] = useState(null);
   const icon = new Icon({
-    iconUrl: "/skateboarding.svg",
+    iconUrl: "/placeicon.svg",
     iconSize: [25, 25]
   });
 
@@ -19,7 +19,7 @@ function App() {
   />
   {parkData.features.map(park => (
         <Marker
-          key={park.properties.PARK_ID}
+          key={park.properties.SITE_ID}
           position={[
             park.geometry.coordinates[1],
             park.geometry.coordinates[0]
