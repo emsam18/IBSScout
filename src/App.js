@@ -50,6 +50,7 @@ function App() {
           <div>
             <h2>{activePark.properties.NAME}</h2>
             <p>{activePark.properties.DESCRIPTIO}</p>
+            <p>{activePark.properties.ADDRESS}</p>
           </div>
         </Popup>
       )}
