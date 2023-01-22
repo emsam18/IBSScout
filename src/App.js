@@ -24,9 +24,14 @@ function App() {
             park.geometry.coordinates[1],
             park.geometry.coordinates[0]
           ]}
-          onClick={() => {
-            setActivePark(park);
+          eventHandlers={{
+            click: (e) => {
+              setActivePark(park);
+            },
           }}
+          // onClick={() => {
+          //   setActivePark(park);
+          // }}
           
           icon={icon}
         />
