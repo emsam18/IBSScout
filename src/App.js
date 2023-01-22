@@ -29,11 +29,9 @@ function App() {
               setActivePark(park);
             },
           }}
-          // onClick={() => {
-          //   setActivePark(park);
-          // }}
           
           icon={icon}
+
         />
         ))}
 
@@ -43,14 +41,12 @@ function App() {
             activePark.geometry.coordinates[1],
             activePark.geometry.coordinates[0]
           ]}
-          // onClose={() => {
-          //   setActivePark(null);
-          // }}
+
         >
           <div>
             <h2>{activePark.properties.NAME}</h2>
             <p>Pay to use: {activePark.properties.PAID}</p>
-            <p>{activePark.properties.ADDRESS}</p>
+            <p>Address: {activePark.properties.ADDRESS}</p>
           </div>
         </Popup>
       )}
